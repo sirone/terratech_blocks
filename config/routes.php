@@ -50,12 +50,13 @@ Router::prefix('wr1az9choi', function ($routes) {
     $routes->fallbacks('DashedRoute');
 });
 
+$hostname = env('ROUTE_HOST_NAME', 'missroute');
 Router::scope('/api', function (RouteBuilder $routes) {
     $routes->get(
         '/blocks',
         'Api/Blocks::index' 
     )
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
 
     $routes->get(
@@ -64,7 +65,7 @@ Router::scope('/api', function (RouteBuilder $routes) {
     )
     ->setPatterns(['id' => '\d+'])
     ->setPass(['id'])
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
 
     $routes->get(
@@ -73,7 +74,7 @@ Router::scope('/api', function (RouteBuilder $routes) {
     )
     ->setPatterns(['id' => '\d+'])
     ->setPass(['id'])
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
     
     $routes->get(
@@ -82,14 +83,14 @@ Router::scope('/api', function (RouteBuilder $routes) {
     )
     ->setPatterns(['id' => '\d+'])
     ->setPass(['id'])
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
 
     $routes->get(
         '/recipes',
         'Api/Recipes::index' 
     )
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
 
     $routes->get(
@@ -98,7 +99,7 @@ Router::scope('/api', function (RouteBuilder $routes) {
     )
     ->setPatterns(['id' => '\d+'])
     ->setPass(['id'])
-    ->setHost('terratech.twilighteve.org')
+    ->setHost($hostname)
     ->setExtensions(['json']);
 
    $routes->fallbacks(DashedRoute::class);
