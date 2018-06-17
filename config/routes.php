@@ -50,8 +50,8 @@ Router::prefix('wr1az9choi', function ($routes) {
     $routes->fallbacks('DashedRoute');
 });
 
-$hostname = env('ROUTE_HOST_NAME', 'missroute');
 Router::scope('/api', function (RouteBuilder $routes) {
+    $hostname = env('ROUTE_HOST_NAME', 'missroute');
     $routes->get(
         '/blocks',
         'Api/Blocks::index' 
