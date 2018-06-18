@@ -60,17 +60,17 @@ button:hover, button:focus, .button:hover, .button:focus {
                 <img src="<?= $fake_img ?>">
             </div>
         </div>
-        <?php $nums = ['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ'] ?>
+        <?php $nums = ['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ'] ?><?php // インデックス ?>
         <?php for ($i=0; $i<5; $i++) : ?>
         <div class="p-0 col-2 bd-highlight d-flex flex-wrap">
-            <div class="d-flex col-12 bd-highlight"><?= $nums[$i] ?></div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center font-weight-bold"><?= $nums[$i] ?></div><?php // インデックス ?>
             <div class="d-flex">
-                <div class="col-9 bd-highlight" id="out_chunk_<?= $i ?>"><img src="<?= $fake_img ?>"></div>
-                <div class="col-3 bd-highlight" id="out_chunk_need_<?= $i ?>">-</div>
+                <div class="col-7 bd-highlight p-0" id="out_chunk_<?= $i ?>"><img src="<?= $fake_img ?>"></div><?php // 素材画像 ?>
+                <div class="col-5 bd-highlight align-self-stretch text-center font-weight-bold" id="out_chunk_need_<?= $i ?>">-</div><?php // 素材の必要数 ?>
                 <div style="display:none" id="out_original_need_<?= $i ?>"></div>
             </div>
-            <div class="d-flex col-12 bd-highlight" id="out_chunk_name_<?= $i ?>">-</div>
-            <div class="d-flex col-12 bd-highlight" id="out_chunk_rarity_<?= $i ?>">-</div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center" id="out_chunk_name_<?= $i ?>">-</div><?php // 素材名 ?>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center" id="out_chunk_rarity_<?= $i ?>">-</div><?php // 素材のレアリティ ?>
         </div>
         <?php endfor; ?>
     </div>
@@ -83,42 +83,42 @@ button:hover, button:focus, .button:hover, .button:focus {
                 <div class="col-3 bd-highlight"><small>グレード</small></div>
             </div>
             <div class="d-flex">
-                <div class="p-0 col-3 bd-highlight" id="out_corporation"><img src="<?= $fake_img ?>"></div>
-                <div class="p-0 col-3 bd-highlight" id="out_rarity"><img src="<?= $fake_img ?>"></div>
-                <div class="p-0 col-3 bd-highlight" id="out_category"><img src="<?= $fake_img ?>"></div>
-                <div class="col-3 bd-highlight" id="out_grade">1</div>
+                <div class="p-0 col-3 bd-highlight" id="out_corporation"><img src="<?= $fake_img ?>"></div><?php // 企業ロゴ ?>
+                <div class="p-0 col-3 bd-highlight" id="out_rarity"><img src="<?= $fake_img ?>"></div><?php // レアリティ画像 ?>
+                <div class="p-0 col-3 bd-highlight" id="out_category"><img src="<?= $fake_img ?>"></div><?php // カテゴリ画像 ?>
+                <div class="col-3 bd-highlight" id="out_grade">1</div><?php // グレード値 (ライセンス？) ?>
             </div>
+                <div class="d-flex align-content-stretch">
+                    <div class="col-6 bd-highlight">買値</div>
+                    <div class="col-6 bd-highlight">売値</div>
+                </div>
+                <div class="d-flex align-content-stretch">
+                    <div class="col-6 bd-highlight" id="purchace_value">฿฿0</div><?php // 買値 ?>
+                    <div class="col-6 bd-highlight" id="scrap_value">฿฿0</div><?php // 売値 ?>
+                </div>
         </div>
         <?php for ($i=0; $i<5; $i++) : ?>
         <div class="p-0 col-2 bd-highlight d-flex flex-wrap">
-            <div class="d-flex col-12 bd-highlight"><?= $i+1 ?></div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center">必要資材<?= $i+1 ?></div><?php // インデックス ?>
             <div class="d-flex">
-                <div class="col-9 bd-highlight"><img src="<?= $fake_img ?>"></div>
-                <div class="col-3 bd-highlight">-</div>
+                <div class="col-7 bd-highlight p-0"><img src="<?= $fake_img ?>"></div><?php // 必要となるコンポーネントの画像 ?>
+                <div class="col-5 bd-highlight align-self-stretch text-center font-weight-bold">-</div><?php // 必要個数 ?>
             </div>
-            <div class="d-flex col-12 bd-highlight">-</div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center">-</div><?php // 必要となるコンポーネントの名前 ?>
         </div>
         <?php endfor; ?>
     </div>
     <div class="d-flex align-content-stretch" style="height: 300px">
-        <div class="p-0 col-2 bd-highlight">
-            <div class="d-flex align-content-stretch">
-                <div class="col-6 bd-highlight">買値</div>
-                <div class="col-6 bd-highlight">売値</div>
-            </div>
-            <div class="d-flex align-content-stretch">
-                <div class="col-6 bd-highlight" id="purchace_value">฿฿0</div>
-                <div class="col-6 bd-highlight" id="scrap_value">฿฿0</div>
-            </div>
+        <div class="p-0 col-2 bd-highlight">　
         </div>
         <?php for ($i=5; $i<10; $i++) : ?>
         <div class="p-0 col-2 bd-highlight d-flex flex-wrap">
-            <div class="d-flex col-12 bd-highlight"><?= $i ?></div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center">必要資材<?= $i+1 ?></div><?php // インデックス ?>
             <div class="d-flex">
-                <div class="col-8 bd-highlight"><img src="<?= $fake_img ?>"></div>
-                <div class="col-4 bd-highlight">-</div>
+                <div class="col-7 bd-highlight p-0"><img src="<?= $fake_img ?>"></div><?php // 必要となるコンポーネントの画像 ?>
+                <div class="col-5 bd-highlight align-self-stretch text-center font-weight-bold">-</div><?php // 必要個数 ?>
             </div>
-            <div class="d-flex col-12 bd-highlight">-</div>
+            <div class="d-flex col-12 bd-highlight justify-content-center align-items-center">-</div><?php // 必要となるコンポーネントの名前 ?>
         </div>
         <?php endfor; ?>
     </div>
@@ -157,7 +157,9 @@ $(function($) {
                 for (var key in data) {
                     $('#select_blocks').append($('<option>').val(data[key].id).text(data[key].name));
                 }
-                block_request(data[0].id);
+                if (data[0] != undefined) {
+                    block_request(data[0].id);
+                }
             }, function (data) {console.log(data)}
         );
     }
@@ -186,8 +188,6 @@ $(function($) {
                 type:'GET',
             }, function (data) {
                 recipe_apply(data);
-                console.log('recipe applied');
-                console.log(data);
             }, function (data) {console.log('can\'t applied!'+data)}
         );
     }

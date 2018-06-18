@@ -1,0 +1,1154 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-06-19 00:22+0900\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AttributesController.php:55;79
+msgid "The attribute has been saved."
+msgstr ""
+
+#: Controller/AttributesController.php:59;83
+msgid "The attribute could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AttributesController.php:100
+msgid "The attribute has been deleted."
+msgstr ""
+
+#: Controller/AttributesController.php:102
+msgid "The attribute could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/BlocksController.php:58;85
+msgid "The block has been saved."
+msgstr ""
+
+#: Controller/BlocksController.php:62;89
+msgid "The block could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BlocksController.php:109
+msgid "The block has been deleted."
+msgstr ""
+
+#: Controller/BlocksController.php:111
+msgid "The block could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:55;79
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/CategoriesController.php:59;83
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:100
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/CategoriesController.php:102
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ChunkCategoriesController.php:55;79
+msgid "The chunk category has been saved."
+msgstr ""
+
+#: Controller/ChunkCategoriesController.php:59;83
+msgid "The chunk category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ChunkCategoriesController.php:100
+msgid "The chunk category has been deleted."
+msgstr ""
+
+#: Controller/ChunkCategoriesController.php:102
+msgid "The chunk category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ChunkRaritiesController.php:55;79
+msgid "The chunk rarity has been saved."
+msgstr ""
+
+#: Controller/ChunkRaritiesController.php:59;83
+msgid "The chunk rarity could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ChunkRaritiesController.php:100
+msgid "The chunk rarity has been deleted."
+msgstr ""
+
+#: Controller/ChunkRaritiesController.php:102
+msgid "The chunk rarity could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ChunksController.php:58;84
+msgid "The chunk has been saved."
+msgstr ""
+
+#: Controller/ChunksController.php:62;88
+msgid "The chunk could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ChunksController.php:107
+msgid "The chunk has been deleted."
+msgstr ""
+
+#: Controller/ChunksController.php:109
+msgid "The chunk could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ComponentTiersController.php:55;79
+msgid "The component tier has been saved."
+msgstr ""
+
+#: Controller/ComponentTiersController.php:59;83
+msgid "The component tier could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ComponentTiersController.php:100
+msgid "The component tier has been deleted."
+msgstr ""
+
+#: Controller/ComponentTiersController.php:102
+msgid "The component tier could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CorporationsController.php:55;79
+msgid "The corporation has been saved."
+msgstr ""
+
+#: Controller/CorporationsController.php:59;83
+msgid "The corporation could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CorporationsController.php:100
+msgid "The corporation has been deleted."
+msgstr ""
+
+#: Controller/CorporationsController.php:102
+msgid "The corporation could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/InformationCategoriesController.php:55;79
+msgid "The information category has been saved."
+msgstr ""
+
+#: Controller/InformationCategoriesController.php:59;83
+msgid "The information category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/InformationCategoriesController.php:100
+msgid "The information category has been deleted."
+msgstr ""
+
+#: Controller/InformationCategoriesController.php:102
+msgid "The information category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/InformationController.php:58;83
+msgid "The information has been saved."
+msgstr ""
+
+#: Controller/InformationController.php:62;87
+msgid "The information could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/InformationController.php:105
+msgid "The information has been deleted."
+msgstr ""
+
+#: Controller/InformationController.php:107
+msgid "The information could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RaritiesController.php:55;79
+msgid "The rarity has been saved."
+msgstr ""
+
+#: Controller/RaritiesController.php:59;83
+msgid "The rarity could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RaritiesController.php:100
+msgid "The rarity has been deleted."
+msgstr ""
+
+#: Controller/RaritiesController.php:102
+msgid "The rarity could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RecipesController.php:58;84
+msgid "The recipe has been saved."
+msgstr ""
+
+#: Controller/RecipesController.php:62;88
+msgid "The recipe could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RecipesController.php:107
+msgid "The recipe has been deleted."
+msgstr ""
+
+#: Controller/RecipesController.php:109
+msgid "The recipe could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Attributes/add.ctp:9
+#: Template/Attributes/edit.ctp:9
+#: Template/Attributes/index.ctp:9;24
+#: Template/Attributes/view.ctp:9;54
+#: Template/Blocks/add.ctp:9
+#: Template/Blocks/edit.ctp:9
+#: Template/Blocks/index.ctp:9;38
+#: Template/Blocks/view.ctp:9;84;114
+#: Template/Categories/add.ctp:9
+#: Template/Categories/edit.ctp:9
+#: Template/Categories/index.ctp:9;25
+#: Template/Categories/view.ctp:9;58
+#: Template/ChunkCategories/add.ctp:9
+#: Template/ChunkCategories/edit.ctp:9
+#: Template/ChunkCategories/index.ctp:9;22
+#: Template/ChunkCategories/view.ctp:9
+#: Template/ChunkRarities/add.ctp:9
+#: Template/ChunkRarities/edit.ctp:9
+#: Template/ChunkRarities/index.ctp:9;24
+#: Template/ChunkRarities/view.ctp:9;52
+#: Template/Chunks/add.ctp:9
+#: Template/Chunks/edit.ctp:9
+#: Template/Chunks/index.ctp:9;28
+#: Template/Chunks/view.ctp:9
+#: Template/ComponentTiers/add.ctp:9
+#: Template/ComponentTiers/edit.ctp:9
+#: Template/ComponentTiers/index.ctp:9;22
+#: Template/ComponentTiers/view.ctp:9
+#: Template/Corporations/add.ctp:9
+#: Template/Corporations/edit.ctp:9
+#: Template/Corporations/index.ctp:9;24
+#: Template/Corporations/view.ctp:9
+#: Template/Information/add.ctp:9
+#: Template/Information/edit.ctp:9
+#: Template/Information/index.ctp:9;26
+#: Template/Information/view.ctp:9
+#: Template/InformationCategories/add.ctp:9
+#: Template/InformationCategories/edit.ctp:9
+#: Template/InformationCategories/index.ctp:9;24
+#: Template/InformationCategories/view.ctp:9;49
+#: Template/Rarities/add.ctp:9
+#: Template/Rarities/edit.ctp:9
+#: Template/Rarities/index.ctp:9;25
+#: Template/Rarities/view.ctp:9;58
+#: Template/Recipes/add.ctp:9
+#: Template/Recipes/edit.ctp:9
+#: Template/Recipes/index.ctp:9;28
+#: Template/Recipes/view.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: Template/Attributes/add.ctp:10
+#: Template/Attributes/edit.ctp:16
+#: Template/Attributes/view.ctp:12
+msgid "List Attributes"
+msgstr ""
+
+#: Template/Attributes/add.ctp:11
+#: Template/Attributes/edit.ctp:17
+#: Template/Attributes/index.ctp:11
+#: Template/Attributes/view.ctp:14
+#: Template/Blocks/add.ctp:10
+#: Template/Blocks/edit.ctp:16
+#: Template/Blocks/view.ctp:12
+#: Template/Categories/add.ctp:11
+#: Template/Categories/edit.ctp:17
+#: Template/Categories/index.ctp:11
+#: Template/Categories/view.ctp:14
+#: Template/Rarities/add.ctp:11
+#: Template/Rarities/edit.ctp:17
+#: Template/Rarities/index.ctp:11
+#: Template/Rarities/view.ctp:14
+#: Template/Recipes/add.ctp:11
+#: Template/Recipes/edit.ctp:17
+#: Template/Recipes/index.ctp:11
+#: Template/Recipes/view.ctp:14
+msgid "List Blocks"
+msgstr ""
+
+#: Template/Attributes/add.ctp:12
+#: Template/Attributes/edit.ctp:18
+#: Template/Attributes/index.ctp:12
+#: Template/Attributes/view.ctp:15
+#: Template/Blocks/index.ctp:10
+#: Template/Blocks/view.ctp:13
+#: Template/Categories/add.ctp:12
+#: Template/Categories/edit.ctp:18
+#: Template/Categories/index.ctp:12
+#: Template/Categories/view.ctp:15
+#: Template/Rarities/add.ctp:12
+#: Template/Rarities/edit.ctp:18
+#: Template/Rarities/index.ctp:12
+#: Template/Rarities/view.ctp:15
+#: Template/Recipes/add.ctp:12
+#: Template/Recipes/edit.ctp:18
+#: Template/Recipes/index.ctp:12
+#: Template/Recipes/view.ctp:15
+msgid "New Block"
+msgstr ""
+
+#: Template/Attributes/add.ctp:18
+msgid "Add Attribute"
+msgstr ""
+
+#: Template/Attributes/add.ctp:23
+#: Template/Attributes/edit.ctp:29
+#: Template/Blocks/add.ctp:38
+#: Template/Blocks/edit.ctp:44
+#: Template/Categories/add.ctp:24
+#: Template/Categories/edit.ctp:30
+#: Template/ChunkCategories/add.ctp:21
+#: Template/ChunkCategories/edit.ctp:27
+#: Template/ChunkRarities/add.ctp:23
+#: Template/ChunkRarities/edit.ctp:29
+#: Template/Chunks/add.ctp:28
+#: Template/Chunks/edit.ctp:34
+#: Template/ComponentTiers/add.ctp:21
+#: Template/ComponentTiers/edit.ctp:27
+#: Template/Corporations/add.ctp:23
+#: Template/Corporations/edit.ctp:29
+#: Template/Information/add.ctp:26
+#: Template/Information/edit.ctp:32
+#: Template/InformationCategories/add.ctp:23
+#: Template/InformationCategories/edit.ctp:29
+#: Template/Rarities/add.ctp:24
+#: Template/Rarities/edit.ctp:30
+#: Template/Recipes/add.ctp:27
+#: Template/Recipes/edit.ctp:33
+msgid "Submit"
+msgstr ""
+
+#: Template/Attributes/edit.ctp:11
+#: Template/Attributes/index.ctp:37
+#: Template/Attributes/view.ctp:72
+#: Template/Blocks/edit.ctp:11
+#: Template/Blocks/index.ctp:57
+#: Template/Blocks/view.ctp:96;127
+#: Template/Categories/edit.ctp:11
+#: Template/Categories/index.ctp:39
+#: Template/Categories/view.ctp:76
+#: Template/ChunkCategories/edit.ctp:11
+#: Template/ChunkCategories/index.ctp:35
+#: Template/ChunkRarities/edit.ctp:11
+#: Template/ChunkRarities/index.ctp:37
+#: Template/ChunkRarities/view.ctp:68
+#: Template/Chunks/edit.ctp:11
+#: Template/Chunks/index.ctp:45
+#: Template/ComponentTiers/edit.ctp:11
+#: Template/ComponentTiers/index.ctp:35
+#: Template/Corporations/edit.ctp:11
+#: Template/Corporations/index.ctp:39
+#: Template/Information/edit.ctp:11
+#: Template/Information/index.ctp:41
+#: Template/InformationCategories/edit.ctp:11
+#: Template/InformationCategories/index.ctp:37
+#: Template/InformationCategories/view.ctp:62
+#: Template/Rarities/edit.ctp:11
+#: Template/Rarities/index.ctp:39
+#: Template/Rarities/view.ctp:76
+#: Template/Recipes/edit.ctp:11
+#: Template/Recipes/index.ctp:43
+msgid "Delete"
+msgstr ""
+
+#: Template/Attributes/edit.ctp:13
+#: Template/Attributes/index.ctp:37
+#: Template/Attributes/view.ctp:11;72
+#: Template/Blocks/edit.ctp:13
+#: Template/Blocks/index.ctp:57
+#: Template/Blocks/view.ctp:11;96;127
+#: Template/Categories/edit.ctp:13
+#: Template/Categories/index.ctp:39
+#: Template/Categories/view.ctp:11;76
+#: Template/ChunkCategories/edit.ctp:13
+#: Template/ChunkCategories/index.ctp:35
+#: Template/ChunkCategories/view.ctp:11
+#: Template/ChunkRarities/edit.ctp:13
+#: Template/ChunkRarities/index.ctp:37
+#: Template/ChunkRarities/view.ctp:11;68
+#: Template/Chunks/edit.ctp:13
+#: Template/Chunks/index.ctp:45
+#: Template/Chunks/view.ctp:11
+#: Template/ComponentTiers/edit.ctp:13
+#: Template/ComponentTiers/index.ctp:35
+#: Template/ComponentTiers/view.ctp:11
+#: Template/Corporations/edit.ctp:13
+#: Template/Corporations/index.ctp:39
+#: Template/Corporations/view.ctp:11
+#: Template/Information/edit.ctp:13
+#: Template/Information/index.ctp:41
+#: Template/Information/view.ctp:11
+#: Template/InformationCategories/edit.ctp:13
+#: Template/InformationCategories/index.ctp:37
+#: Template/InformationCategories/view.ctp:11;62
+#: Template/Rarities/edit.ctp:13
+#: Template/Rarities/index.ctp:39
+#: Template/Rarities/view.ctp:11;76
+#: Template/Recipes/edit.ctp:13
+#: Template/Recipes/index.ctp:43
+#: Template/Recipes/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Attributes/edit.ctp:24
+#: Template/Attributes/view.ctp:10
+msgid "Edit Attribute"
+msgstr ""
+
+#: Template/Attributes/index.ctp:10
+#: Template/Attributes/view.ctp:13
+msgid "New Attribute"
+msgstr ""
+
+#: Template/Attributes/index.ctp:16
+msgid "Attributes"
+msgstr ""
+
+#: Template/Attributes/index.ctp:35
+#: Template/Attributes/view.ctp:70
+#: Template/Blocks/index.ctp:55
+#: Template/Blocks/view.ctp:94;125
+#: Template/Categories/index.ctp:37
+#: Template/Categories/view.ctp:74
+#: Template/ChunkCategories/index.ctp:33
+#: Template/ChunkRarities/index.ctp:35
+#: Template/ChunkRarities/view.ctp:66
+#: Template/Chunks/index.ctp:43
+#: Template/ComponentTiers/index.ctp:33
+#: Template/Corporations/index.ctp:37
+#: Template/Information/index.ctp:39
+#: Template/InformationCategories/index.ctp:35
+#: Template/InformationCategories/view.ctp:60
+#: Template/Rarities/index.ctp:37
+#: Template/Rarities/view.ctp:74
+#: Template/Recipes/index.ctp:41
+#: View/Helper/PaginatorHelper.php:1220
+msgid "View"
+msgstr ""
+
+#: Template/Attributes/index.ctp:36
+#: Template/Attributes/view.ctp:71
+#: Template/Blocks/index.ctp:56
+#: Template/Blocks/view.ctp:95;126
+#: Template/Categories/index.ctp:38
+#: Template/Categories/view.ctp:75
+#: Template/ChunkCategories/index.ctp:34
+#: Template/ChunkRarities/index.ctp:36
+#: Template/ChunkRarities/view.ctp:67
+#: Template/Chunks/index.ctp:44
+#: Template/ComponentTiers/index.ctp:34
+#: Template/Corporations/index.ctp:38
+#: Template/Information/index.ctp:40
+#: Template/InformationCategories/index.ctp:36
+#: Template/InformationCategories/view.ctp:61
+#: Template/Rarities/index.ctp:38
+#: Template/Rarities/view.ctp:75
+#: Template/Recipes/index.ctp:42
+msgid "Edit"
+msgstr ""
+
+#: Template/Attributes/index.ctp:45
+#: Template/Blocks/index.ctp:65
+#: Template/Categories/index.ctp:47
+#: Template/ChunkCategories/index.ctp:43
+#: Template/ChunkRarities/index.ctp:45
+#: Template/Chunks/index.ctp:53
+#: Template/ComponentTiers/index.ctp:43
+#: Template/Corporations/index.ctp:47
+#: Template/Information/index.ctp:49
+#: Template/InformationCategories/index.ctp:45
+#: Template/Rarities/index.ctp:47
+#: Template/Recipes/index.ctp:51
+msgid "first"
+msgstr ""
+
+#: Template/Attributes/index.ctp:46
+#: Template/Blocks/index.ctp:66
+#: Template/Categories/index.ctp:48
+#: Template/ChunkCategories/index.ctp:44
+#: Template/ChunkRarities/index.ctp:46
+#: Template/Chunks/index.ctp:54
+#: Template/ComponentTiers/index.ctp:44
+#: Template/Corporations/index.ctp:48
+#: Template/Information/index.ctp:50
+#: Template/InformationCategories/index.ctp:46
+#: Template/Rarities/index.ctp:48
+#: Template/Recipes/index.ctp:52
+msgid "previous"
+msgstr ""
+
+#: Template/Attributes/index.ctp:48
+#: Template/Blocks/index.ctp:68
+#: Template/Categories/index.ctp:50
+#: Template/ChunkCategories/index.ctp:46
+#: Template/ChunkRarities/index.ctp:48
+#: Template/Chunks/index.ctp:56
+#: Template/ComponentTiers/index.ctp:46
+#: Template/Corporations/index.ctp:50
+#: Template/Information/index.ctp:52
+#: Template/InformationCategories/index.ctp:48
+#: Template/Rarities/index.ctp:50
+#: Template/Recipes/index.ctp:54
+msgid "next"
+msgstr ""
+
+#: Template/Attributes/index.ctp:49
+#: Template/Blocks/index.ctp:69
+#: Template/Categories/index.ctp:51
+#: Template/ChunkCategories/index.ctp:47
+#: Template/ChunkRarities/index.ctp:49
+#: Template/Chunks/index.ctp:57
+#: Template/ComponentTiers/index.ctp:47
+#: Template/Corporations/index.ctp:51
+#: Template/Information/index.ctp:53
+#: Template/InformationCategories/index.ctp:49
+#: Template/Rarities/index.ctp:51
+#: Template/Recipes/index.ctp:55
+msgid "last"
+msgstr ""
+
+#: Template/Attributes/index.ctp:51
+#: Template/Blocks/index.ctp:71
+#: Template/Categories/index.ctp:53
+#: Template/ChunkCategories/index.ctp:49
+#: Template/ChunkRarities/index.ctp:51
+#: Template/Chunks/index.ctp:59
+#: Template/ComponentTiers/index.ctp:49
+#: Template/Corporations/index.ctp:53
+#: Template/Information/index.ctp:55
+#: Template/InformationCategories/index.ctp:51
+#: Template/Rarities/index.ctp:53
+#: Template/Recipes/index.ctp:57
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Attributes/view.ctp:11
+msgid "Delete Attribute"
+msgstr ""
+
+#: Template/Attributes/view.ctp:22;49
+#: Template/Blocks/view.ctp:46
+#: Template/Categories/view.ctp:22;53
+#: Template/ChunkCategories/view.ctp:20
+#: Template/ChunkRarities/view.ctp:22;44
+#: Template/Chunks/view.ctp:22
+#: Template/ComponentTiers/view.ctp:20
+#: Template/Corporations/view.ctp:20
+#: Template/InformationCategories/view.ctp:22
+#: Template/Rarities/view.ctp:22;53
+msgid "Name"
+msgstr ""
+
+#: Template/Attributes/view.ctp:26;43
+#: Template/Blocks/view.ctp:54;79;108
+#: Template/Categories/view.ctp:30;47
+#: Template/ChunkCategories/view.ctp:24
+#: Template/ChunkRarities/view.ctp:26;43
+#: Template/Chunks/view.ctp:34
+#: Template/ComponentTiers/view.ctp:24
+#: Template/Corporations/view.ctp:28
+#: Template/Information/view.ctp:30
+#: Template/InformationCategories/view.ctp:26;43
+#: Template/Rarities/view.ctp:30;47
+#: Template/Recipes/view.ctp:32
+msgid "Id"
+msgstr ""
+
+#: Template/Attributes/view.ctp:30;52
+#: Template/Blocks/view.ctp:62;82;112
+#: Template/Categories/view.ctp:34;56
+#: Template/ChunkCategories/view.ctp:28
+#: Template/ChunkRarities/view.ctp:30;50
+#: Template/Chunks/view.ctp:46
+#: Template/ComponentTiers/view.ctp:28
+#: Template/Corporations/view.ctp:32
+#: Template/Information/view.ctp:38
+#: Template/InformationCategories/view.ctp:30;47
+#: Template/Rarities/view.ctp:34;56
+#: Template/Recipes/view.ctp:40
+msgid "Created"
+msgstr ""
+
+#: Template/Attributes/view.ctp:34;53
+#: Template/Blocks/view.ctp:66;83;113
+#: Template/Categories/view.ctp:38;57
+#: Template/ChunkCategories/view.ctp:32
+#: Template/ChunkRarities/view.ctp:34;51
+#: Template/Chunks/view.ctp:50
+#: Template/ComponentTiers/view.ctp:32
+#: Template/Corporations/view.ctp:36
+#: Template/Information/view.ctp:42
+#: Template/InformationCategories/view.ctp:34;48
+#: Template/Rarities/view.ctp:38;57
+#: Template/Recipes/view.ctp:44
+msgid "Modified"
+msgstr ""
+
+#: Template/Attributes/view.ctp:39
+#: Template/Categories/view.ctp:43
+#: Template/Rarities/view.ctp:43
+msgid "Related Blocks"
+msgstr ""
+
+#: Template/Attributes/view.ctp:44
+#: Template/Blocks/view.ctp:30
+#: Template/Categories/view.ctp:48
+#: Template/Rarities/view.ctp:48
+msgid "Identifier"
+msgstr ""
+
+#: Template/Attributes/view.ctp:45
+#: Template/Categories/view.ctp:49
+#: Template/Rarities/view.ctp:49
+msgid "Category Id"
+msgstr ""
+
+#: Template/Attributes/view.ctp:46
+#: Template/Categories/view.ctp:50
+#: Template/Rarities/view.ctp:50
+msgid "Rarity Id"
+msgstr ""
+
+#: Template/Attributes/view.ctp:47
+#: Template/Blocks/view.ctp:81
+#: Template/Categories/view.ctp:51
+#: Template/Rarities/view.ctp:51
+msgid "Attribute Id"
+msgstr ""
+
+#: Template/Attributes/view.ctp:48
+#: Template/Blocks/view.ctp:58
+#: Template/Categories/view.ctp:52
+#: Template/Rarities/view.ctp:52
+msgid "Grade"
+msgstr ""
+
+#: Template/Attributes/view.ctp:50
+#: Template/Blocks/view.ctp:71
+#: Template/Categories/view.ctp:54
+#: Template/ChunkRarities/view.ctp:45
+#: Template/Chunks/view.ctp:55
+#: Template/Information/view.ctp:47
+#: Template/InformationCategories/view.ctp:45
+#: Template/Rarities/view.ctp:54
+msgid "Description"
+msgstr ""
+
+#: Template/Attributes/view.ctp:51
+#: Template/Blocks/view.ctp:50
+#: Template/Categories/view.ctp:26;55
+#: Template/ChunkRarities/view.ctp:46
+#: Template/Chunks/view.ctp:26
+#: Template/Corporations/view.ctp:24
+#: Template/Rarities/view.ctp:26;55
+msgid "Image Url"
+msgstr ""
+
+#: Template/BlockInformation/index.ctp:32
+#: Template/Information/index.ctp:16
+msgid "Information"
+msgstr ""
+
+#: Template/BlockInformation/index.ctp:35
+#: Template/Blocks/index.ctp:24
+msgid "Blocks"
+msgstr ""
+
+#: Template/Blocks/add.ctp:11
+#: Template/Blocks/edit.ctp:17
+#: Template/Blocks/index.ctp:11
+#: Template/Blocks/view.ctp:14
+#: Template/Categories/add.ctp:10
+#: Template/Categories/edit.ctp:16
+#: Template/Categories/view.ctp:12
+msgid "List Categories"
+msgstr ""
+
+#: Template/Blocks/add.ctp:12
+#: Template/Blocks/edit.ctp:18
+#: Template/Blocks/index.ctp:12
+#: Template/Blocks/view.ctp:15
+#: Template/Categories/index.ctp:10
+#: Template/Categories/view.ctp:13
+msgid "New Category"
+msgstr ""
+
+#: Template/Blocks/add.ctp:13
+#: Template/Blocks/edit.ctp:19
+#: Template/Blocks/index.ctp:13
+#: Template/Blocks/view.ctp:16
+#: Template/Rarities/add.ctp:10
+#: Template/Rarities/edit.ctp:16
+#: Template/Rarities/view.ctp:12
+msgid "List Rarities"
+msgstr ""
+
+#: Template/Blocks/add.ctp:14
+#: Template/Blocks/edit.ctp:20
+#: Template/Blocks/index.ctp:14
+#: Template/Blocks/view.ctp:17
+#: Template/Rarities/index.ctp:10
+#: Template/Rarities/view.ctp:13
+msgid "New Rarity"
+msgstr ""
+
+#: Template/Blocks/add.ctp:15
+#: Template/Blocks/edit.ctp:21
+#: Template/Blocks/index.ctp:15
+#: Template/Blocks/view.ctp:18
+#: Template/Corporations/add.ctp:10
+#: Template/Corporations/edit.ctp:16
+#: Template/Corporations/view.ctp:12
+msgid "List Corporations"
+msgstr ""
+
+#: Template/Blocks/add.ctp:16
+#: Template/Blocks/edit.ctp:22
+#: Template/Blocks/index.ctp:16
+#: Template/Blocks/view.ctp:19
+#: Template/Corporations/index.ctp:10
+#: Template/Corporations/view.ctp:13
+msgid "New Corporation"
+msgstr ""
+
+#: Template/Blocks/add.ctp:17
+#: Template/Blocks/edit.ctp:23
+#: Template/Blocks/index.ctp:17
+#: Template/Blocks/view.ctp:20
+msgid "List Block Attributes"
+msgstr ""
+
+#: Template/Blocks/add.ctp:18
+#: Template/Blocks/edit.ctp:24
+#: Template/Blocks/index.ctp:18
+#: Template/Blocks/view.ctp:21
+msgid "New Block Attribute"
+msgstr ""
+
+#: Template/Blocks/add.ctp:19
+#: Template/Blocks/edit.ctp:25
+#: Template/Blocks/index.ctp:19
+#: Template/Blocks/view.ctp:22
+#: Template/Recipes/add.ctp:10
+#: Template/Recipes/edit.ctp:16
+#: Template/Recipes/view.ctp:12
+msgid "List Recipes"
+msgstr ""
+
+#: Template/Blocks/add.ctp:20
+#: Template/Blocks/edit.ctp:26
+#: Template/Blocks/index.ctp:20
+#: Template/Blocks/view.ctp:23
+#: Template/Recipes/index.ctp:10
+#: Template/Recipes/view.ctp:13
+msgid "New Recipe"
+msgstr ""
+
+#: Template/Blocks/add.ctp:26
+msgid "Add Block"
+msgstr ""
+
+#: Template/Blocks/edit.ctp:32
+#: Template/Blocks/view.ctp:10
+msgid "Edit Block"
+msgstr ""
+
+#: Template/Blocks/view.ctp:11
+msgid "Delete Block"
+msgstr ""
+
+#: Template/Blocks/view.ctp:34
+msgid "Category"
+msgstr ""
+
+#: Template/Blocks/view.ctp:38
+msgid "Rarity"
+msgstr ""
+
+#: Template/Blocks/view.ctp:42
+msgid "Corporation"
+msgstr ""
+
+#: Template/Blocks/view.ctp:75
+msgid "Related Block Attributes"
+msgstr ""
+
+#: Template/Blocks/view.ctp:80;109
+msgid "Block Id"
+msgstr ""
+
+#: Template/Blocks/view.ctp:104
+msgid "Related Recipes"
+msgstr ""
+
+#: Template/Blocks/view.ctp:110
+msgid "Chunk Id"
+msgstr ""
+
+#: Template/Blocks/view.ctp:111
+#: Template/Recipes/view.ctp:36
+msgid "Need"
+msgstr ""
+
+#: Template/Categories/add.ctp:18
+msgid "Add Category"
+msgstr ""
+
+#: Template/Categories/edit.ctp:24
+#: Template/Categories/view.ctp:10
+msgid "Edit Category"
+msgstr ""
+
+#: Template/Categories/index.ctp:16
+msgid "Categories"
+msgstr ""
+
+#: Template/Categories/view.ctp:11
+msgid "Delete Category"
+msgstr ""
+
+#: Template/ChunkCategories/add.ctp:10
+#: Template/ChunkCategories/edit.ctp:16
+#: Template/ChunkCategories/view.ctp:12
+msgid "List Chunk Categories"
+msgstr ""
+
+#: Template/ChunkCategories/add.ctp:16
+msgid "Add Chunk Category"
+msgstr ""
+
+#: Template/ChunkCategories/edit.ctp:22
+#: Template/ChunkCategories/view.ctp:10
+msgid "Edit Chunk Category"
+msgstr ""
+
+#: Template/ChunkCategories/index.ctp:10
+#: Template/ChunkCategories/view.ctp:13
+msgid "New Chunk Category"
+msgstr ""
+
+#: Template/ChunkCategories/index.ctp:14
+msgid "Chunk Categories"
+msgstr ""
+
+#: Template/ChunkCategories/view.ctp:11
+msgid "Delete Chunk Category"
+msgstr ""
+
+#: Template/ChunkRarities/add.ctp:10
+#: Template/ChunkRarities/edit.ctp:16
+#: Template/ChunkRarities/view.ctp:12
+#: Template/Chunks/add.ctp:11
+#: Template/Chunks/edit.ctp:17
+#: Template/Chunks/index.ctp:11
+#: Template/Chunks/view.ctp:14
+msgid "List Chunk Rarities"
+msgstr ""
+
+#: Template/ChunkRarities/add.ctp:11
+#: Template/ChunkRarities/edit.ctp:17
+#: Template/ChunkRarities/index.ctp:11
+#: Template/ChunkRarities/view.ctp:14
+#: Template/Chunks/add.ctp:10
+#: Template/Chunks/edit.ctp:16
+#: Template/Chunks/view.ctp:12
+#: Template/Recipes/add.ctp:13
+#: Template/Recipes/edit.ctp:19
+#: Template/Recipes/index.ctp:13
+#: Template/Recipes/view.ctp:16
+msgid "List Chunks"
+msgstr ""
+
+#: Template/ChunkRarities/add.ctp:12
+#: Template/ChunkRarities/edit.ctp:18
+#: Template/ChunkRarities/index.ctp:12
+#: Template/ChunkRarities/view.ctp:15
+#: Template/Chunks/index.ctp:10
+#: Template/Chunks/view.ctp:13
+#: Template/Recipes/add.ctp:14
+#: Template/Recipes/edit.ctp:20
+#: Template/Recipes/index.ctp:14
+#: Template/Recipes/view.ctp:17
+msgid "New Chunk"
+msgstr ""
+
+#: Template/ChunkRarities/add.ctp:18
+msgid "Add Chunk Rarity"
+msgstr ""
+
+#: Template/ChunkRarities/edit.ctp:24
+#: Template/ChunkRarities/view.ctp:10
+msgid "Edit Chunk Rarity"
+msgstr ""
+
+#: Template/ChunkRarities/index.ctp:10
+#: Template/ChunkRarities/view.ctp:13
+#: Template/Chunks/add.ctp:12
+#: Template/Chunks/edit.ctp:18
+#: Template/Chunks/index.ctp:12
+#: Template/Chunks/view.ctp:15
+msgid "New Chunk Rarity"
+msgstr ""
+
+#: Template/ChunkRarities/index.ctp:16
+msgid "Chunk Rarities"
+msgstr ""
+
+#: Template/ChunkRarities/view.ctp:11
+msgid "Delete Chunk Rarity"
+msgstr ""
+
+#: Template/ChunkRarities/view.ctp:39
+msgid "Related Chunks"
+msgstr ""
+
+#: Template/ChunkRarities/view.ctp:47
+#: Template/Chunks/view.ctp:38
+msgid "Sell Price"
+msgstr ""
+
+#: Template/ChunkRarities/view.ctp:48
+#: Template/Chunks/view.ctp:42
+msgid "Refined Chunk Id"
+msgstr ""
+
+#: Template/ChunkRarities/view.ctp:49
+msgid "Chunk Rarity Id"
+msgstr ""
+
+#: Template/Chunks/add.ctp:18
+msgid "Add Chunk"
+msgstr ""
+
+#: Template/Chunks/edit.ctp:24
+#: Template/Chunks/view.ctp:10
+msgid "Edit Chunk"
+msgstr ""
+
+#: Template/Chunks/index.ctp:16
+msgid "Chunks"
+msgstr ""
+
+#: Template/Chunks/view.ctp:11
+msgid "Delete Chunk"
+msgstr ""
+
+#: Template/Chunks/view.ctp:30
+msgid "Chunk Rarity"
+msgstr ""
+
+#: Template/ComponentTiers/add.ctp:10
+#: Template/ComponentTiers/edit.ctp:16
+#: Template/ComponentTiers/view.ctp:12
+msgid "List Component Tiers"
+msgstr ""
+
+#: Template/ComponentTiers/add.ctp:16
+msgid "Add Component Tier"
+msgstr ""
+
+#: Template/ComponentTiers/edit.ctp:22
+#: Template/ComponentTiers/view.ctp:10
+msgid "Edit Component Tier"
+msgstr ""
+
+#: Template/ComponentTiers/index.ctp:10
+#: Template/ComponentTiers/view.ctp:13
+msgid "New Component Tier"
+msgstr ""
+
+#: Template/ComponentTiers/index.ctp:14
+msgid "Component Tiers"
+msgstr ""
+
+#: Template/ComponentTiers/view.ctp:11
+msgid "Delete Component Tier"
+msgstr ""
+
+#: Template/Corporations/add.ctp:16
+msgid "Add Corporation"
+msgstr ""
+
+#: Template/Corporations/edit.ctp:22
+#: Template/Corporations/view.ctp:10
+msgid "Edit Corporation"
+msgstr ""
+
+#: Template/Corporations/index.ctp:14
+msgid "Corporations"
+msgstr ""
+
+#: Template/Corporations/view.ctp:11
+msgid "Delete Corporation"
+msgstr ""
+
+#: Template/Corporations/view.ctp:40
+msgid "Is Planned"
+msgstr ""
+
+#: Template/Corporations/view.ctp:41
+msgid "Yes"
+msgstr ""
+
+#: Template/Corporations/view.ctp:41
+msgid "No"
+msgstr ""
+
+#: Template/Information/add.ctp:10
+#: Template/Information/edit.ctp:16
+#: Template/Information/view.ctp:12
+#: Template/InformationCategories/add.ctp:11
+#: Template/InformationCategories/edit.ctp:17
+#: Template/InformationCategories/index.ctp:11
+#: Template/InformationCategories/view.ctp:14
+msgid "List Information"
+msgstr ""
+
+#: Template/Information/add.ctp:11
+#: Template/Information/edit.ctp:17
+#: Template/Information/index.ctp:11
+#: Template/Information/view.ctp:14
+#: Template/InformationCategories/add.ctp:10
+#: Template/InformationCategories/edit.ctp:16
+#: Template/InformationCategories/view.ctp:12
+msgid "List Information Categories"
+msgstr ""
+
+#: Template/Information/add.ctp:12
+#: Template/Information/edit.ctp:18
+#: Template/Information/index.ctp:12
+#: Template/Information/view.ctp:15
+#: Template/InformationCategories/index.ctp:10
+#: Template/InformationCategories/view.ctp:13
+msgid "New Information Category"
+msgstr ""
+
+#: Template/Information/add.ctp:18
+msgid "Add Information"
+msgstr ""
+
+#: Template/Information/edit.ctp:24
+#: Template/Information/view.ctp:10
+msgid "Edit Information"
+msgstr ""
+
+#: Template/Information/index.ctp:10
+#: Template/Information/view.ctp:13
+#: Template/InformationCategories/add.ctp:12
+#: Template/InformationCategories/edit.ctp:18
+#: Template/InformationCategories/index.ctp:12
+#: Template/InformationCategories/view.ctp:15
+msgid "New Information"
+msgstr ""
+
+#: Template/Information/view.ctp:11
+msgid "Delete Information"
+msgstr ""
+
+#: Template/Information/view.ctp:22
+#: Template/InformationCategories/view.ctp:44
+msgid "Title"
+msgstr ""
+
+#: Template/Information/view.ctp:26
+msgid "Information Category"
+msgstr ""
+
+#: Template/Information/view.ctp:34
+msgid "Reserved At"
+msgstr ""
+
+#: Template/InformationCategories/add.ctp:18
+msgid "Add Information Category"
+msgstr ""
+
+#: Template/InformationCategories/edit.ctp:24
+#: Template/InformationCategories/view.ctp:10
+msgid "Edit Information Category"
+msgstr ""
+
+#: Template/InformationCategories/index.ctp:16
+msgid "Information Categories"
+msgstr ""
+
+#: Template/InformationCategories/view.ctp:11
+msgid "Delete Information Category"
+msgstr ""
+
+#: Template/InformationCategories/view.ctp:39
+msgid "Related Information"
+msgstr ""
+
+#: Template/InformationCategories/view.ctp:46
+msgid "Information Category Id"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Rarities/add.ctp:18
+msgid "Add Rarity"
+msgstr ""
+
+#: Template/Rarities/edit.ctp:24
+#: Template/Rarities/view.ctp:10
+msgid "Edit Rarity"
+msgstr ""
+
+#: Template/Rarities/index.ctp:16
+msgid "Rarities"
+msgstr ""
+
+#: Template/Rarities/view.ctp:11
+msgid "Delete Rarity"
+msgstr ""
+
+#: Template/Recipes/add.ctp:20
+msgid "Add Recipe"
+msgstr ""
+
+#: Template/Recipes/edit.ctp:26
+#: Template/Recipes/view.ctp:10
+msgid "Edit Recipe"
+msgstr ""
+
+#: Template/Recipes/index.ctp:18
+msgid "Recipes"
+msgstr ""
+
+#: Template/Recipes/view.ctp:11
+msgid "Delete Recipe"
+msgstr ""
+
+#: Template/Recipes/view.ctp:24
+msgid "Block"
+msgstr ""
+
+#: Template/Recipes/view.ctp:28
+msgid "Chunk"
+msgstr ""
+
