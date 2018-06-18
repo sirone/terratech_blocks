@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Information Model
  *
  * @property \App\Model\Table\InformationCategoriesTable|\Cake\ORM\Association\BelongsTo $InformationCategories
- * @property \App\Model\Table\CategoriesTable|\Cake\ORM\Association\BelongsToMany $Categories
+ * @property |\Cake\ORM\Association\BelongsToMany $Categories
  *
  * @method \App\Model\Entity\Information get($primaryKey, $options = [])
  * @method \App\Model\Entity\Information newEntity($data = null, array $options = [])
@@ -45,11 +45,6 @@ class InformationTable extends Table
             'foreignKey' => 'information_category_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsToMany('Categories', [
-            'foreignKey' => 'information_id',
-            'targetForeignKey' => 'category_id',
-            'joinTable' => 'information_categories'
-        ]);
     }
 
     /**
@@ -74,6 +69,10 @@ class InformationTable extends Table
             ->scalar('description')
             ->requirePresence('description', 'create')
             ->notEmpty('description');
+
+        $validator
+            ->dateTime('reserved_at')
+            ->allowEmpty('reserved_at');
 
         return $validator;
     }

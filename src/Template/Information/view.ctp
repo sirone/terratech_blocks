@@ -13,8 +13,6 @@
         <li><?= $this->Html->link(__('New Information'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Information Categories'), ['controller' => 'InformationCategories', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Information Category'), ['controller' => 'InformationCategories', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="information view large-9 medium-8 columns content">
@@ -33,6 +31,10 @@
             <td><?= $this->Number->format($information->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Reserved At') ?></th>
+            <td><?= h($information->reserved_at) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($information->created) ?></td>
         </tr>
@@ -44,36 +46,5 @@
     <div class="row">
         <h4><?= __('Description') ?></h4>
         <?= $this->Text->autoParagraph(h($information->description)); ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related Categories') ?></h4>
-        <?php if (!empty($information->categories)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Identifier') ?></th>
-                <th scope="col"><?= __('Name') ?></th>
-                <th scope="col"><?= __('Image Url') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($information->categories as $categories): ?>
-            <tr>
-                <td><?= h($categories->id) ?></td>
-                <td><?= h($categories->identifier) ?></td>
-                <td><?= h($categories->name) ?></td>
-                <td><?= h($categories->image_url) ?></td>
-                <td><?= h($categories->created) ?></td>
-                <td><?= h($categories->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Categories', 'action' => 'view', $categories->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Categories', 'action' => 'edit', $categories->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Categories', 'action' => 'delete', $categories->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categories->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
     </div>
 </div>

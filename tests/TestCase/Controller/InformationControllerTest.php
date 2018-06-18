@@ -17,8 +17,7 @@ class InformationControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.information',
-        'app.information_categories',
-        'app.categories'
+        'app.information_categories'
     ];
 
     /**

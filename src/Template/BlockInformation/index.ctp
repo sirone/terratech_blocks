@@ -5,6 +5,8 @@
  */
 ?>
 <?php
+echo $this->Html->css('https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css', ['block'=>true]);
+echo $this->Html->script('https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js', ['block'=>true]);
 $grades = [1=>1,2=>2,3=>3,4=>4,5=>5];
 /* https://github.com/Rydgel/Fake-images-please/blob/master/app/main.py */
 $fake_img = 'https://fakeimg.pl/220x220/666%2C64/fff%2C128/?text=%C3%97&font_size=140';
@@ -14,7 +16,22 @@ $fake_img = 'https://fakeimg.pl/220x220/666%2C64/fff%2C128/?text=%C3%97&font_siz
   background-color: rgba(86,61,124,.15);
   border: 1px solid rgba(86,61,124,.15);
 }
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: rgba(0, 0, 0, 0.01);
+}
 </style>
+<?php foreach ($information_list as $information): ?>
+<div class="information_modal" data-izimodal-group="information-list" data-iziModal-title="<?= $information->title ?>" data-iziModal-subtitle="<?= $information->information_category->name ?> <?= $information->reserved_at ?>">
+    <?= $information->description; ?>
+    <nav>
+        <button data-izimodal-prev="" class="p-1">前のニュース</button><button data-izimodal-next="" class="p-1">次のニュース</button>
+    </nav>
+</div>
+<?php endforeach; ?>
+<h3><?= __('Information') ?></h3>
+<a href="#" data-izimodal-open=".information_modal">更新情報</a>
+
 <h3><?= __('Blocks') ?></h3>
 <?php $this->Form->create(null); ?>
 <!-- たぶん flexbox の使い方を間違えてる気がするんだけど、フロントの人ではないので多めに見てください m(_ _)m -->
@@ -106,10 +123,20 @@ $fake_img = 'https://fakeimg.pl/220x220/666%2C64/fff%2C128/?text=%C3%97&font_siz
         <?php endfor; ?>
     </div>
 </div>
-<div id="result"></div>
 
 <script>
 $(function($) {
+    $('.information_modal').iziModal({
+        group: 'information-list',
+        loop: true,
+        radius: 8,
+        top: 80,
+        timeout: 500000,
+        timeoutProgressbar: true,
+        pauseOnHover: true,
+        headerColor: '#116d76',
+    });
+
     function ajax_get_request($parameters, $done, $fail) {
         $.ajax($parameters)
         .done( (data) => $done(data) )

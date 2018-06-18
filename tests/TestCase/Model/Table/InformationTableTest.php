@@ -25,8 +25,7 @@ class InformationTableTest extends TestCase
      */
     public $fixtures = [
         'app.information',
-        'app.information_categories',
-        'app.categories'
+        'app.information_categories'
     ];
 
     /**

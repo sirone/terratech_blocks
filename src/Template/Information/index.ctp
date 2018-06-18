@@ -10,8 +10,6 @@
         <li><?= $this->Html->link(__('New Information'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Information Categories'), ['controller' => 'InformationCategories', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Information Category'), ['controller' => 'InformationCategories', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="information index large-9 medium-8 columns content">
@@ -22,6 +20,7 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('information_category_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('reserved_at') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -33,6 +32,7 @@
                 <td><?= $this->Number->format($information->id) ?></td>
                 <td><?= h($information->title) ?></td>
                 <td><?= $information->has('information_category') ? $this->Html->link($information->information_category->name, ['controller' => 'InformationCategories', 'action' => 'view', $information->information_category->id]) : '' ?></td>
+                <td><?= h($information->reserved_at) ?></td>
                 <td><?= h($information->created) ?></td>
                 <td><?= h($information->modified) ?></td>
                 <td class="actions">

@@ -24,15 +24,26 @@ class BlockInformationController extends AppController
 {
     public function index()
     {
+        $information = TableRegistry::get('information');
+        $this->set('information_list',
+            $information->find('all')
+                        ->select(['id', 'title', 'description', 'InformationCategories.name', 'reserved_at'])
+                        ->where(['OR' => [['reserved_at IS NULL'],['reserved_at <= NOW()']]])
+                        ->Contain(['InformationCategories'])
+                        ->all()
+        );
+
         $corporations = TableRegistry::get('corporations');
         $this->set('corporations',
             $corporations->find('list')
                          ->select(['id', 'name'])
-                         ->where(['is_planned ='=>false]));
-                              
+                         ->where(['is_planned ='=>false])
+        );
+
         $categories = TableRegistry::get('categories');
         $this->set('categories', $categories->find('list')
-                              ->select(['id', 'name']));
+                              ->select(['id', 'name'])
+        );
 
                               
         $blocks = TableRegistry::get('blocks');

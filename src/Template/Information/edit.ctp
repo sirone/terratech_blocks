@@ -16,8 +16,6 @@
         <li><?= $this->Html->link(__('List Information'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Information Categories'), ['controller' => 'InformationCategories', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Information Category'), ['controller' => 'InformationCategories', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="information form large-9 medium-8 columns content">
@@ -28,7 +26,7 @@
             echo $this->Form->control('title');
             echo $this->Form->control('description');
             echo $this->Form->control('information_category_id', ['options' => $informationCategories]);
-            echo $this->Form->control('categories._ids', ['options' => $categories]);
+            echo $this->Form->control('reserved_at');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

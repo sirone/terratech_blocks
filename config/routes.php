@@ -101,8 +101,6 @@ Router::scope('/api', function (RouteBuilder $routes) {
     ->setPass(['id'])
     ->setHost($hostname)
     ->setExtensions(['json']);
-
-   $routes->fallbacks(DashedRoute::class);
 });
 
 Router::scope('/', function (RouteBuilder $routes) {

@@ -38,7 +38,7 @@ class InformationController extends AppController
     public function view($id = null)
     {
         $information = $this->Information->get($id, [
-            'contain' => ['InformationCategories', 'Categories']
+            'contain' => ['InformationCategories']
         ]);
 
         $this->set('information', $information);
@@ -62,8 +62,7 @@ class InformationController extends AppController
             $this->Flash->error(__('The information could not be saved. Please, try again.'));
         }
         $informationCategories = $this->Information->InformationCategories->find('list', ['limit' => 200]);
-        $categories = $this->Information->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('information', 'informationCategories', 'categories'));
+        $this->set(compact('information', 'informationCategories'));
     }
 
     /**
@@ -76,7 +75,7 @@ class InformationController extends AppController
     public function edit($id = null)
     {
         $information = $this->Information->get($id, [
-            'contain' => ['Categories']
+            'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $information = $this->Information->patchEntity($information, $this->request->getData());
@@ -88,8 +87,7 @@ class InformationController extends AppController
             $this->Flash->error(__('The information could not be saved. Please, try again.'));
         }
         $informationCategories = $this->Information->InformationCategories->find('list', ['limit' => 200]);
-        $categories = $this->Information->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('information', 'informationCategories', 'categories'));
+        $this->set(compact('information', 'informationCategories'));
     }
 
     /**
