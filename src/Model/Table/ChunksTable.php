@@ -9,8 +9,11 @@ use Cake\Validation\Validator;
 /**
  * Chunks Model
  *
- * @property \App\Model\Table\RefinedChunksTable|\Cake\ORM\Association\BelongsTo $RefinedChunks
+ * @property \App\Model\Table\ChunksTable|\Cake\ORM\Association\BelongsTo $Chunks
+ * @property |\Cake\ORM\Association\BelongsTo $ChunkCategories
  * @property \App\Model\Table\ChunkRaritiesTable|\Cake\ORM\Association\BelongsTo $ChunkRarities
+ * @property |\Cake\ORM\Association\BelongsTo $ComponentTiers
+ * @property |\Cake\ORM\Association\HasMany $Recipes
  *
  * @method \App\Model\Entity\Chunk get($primaryKey, $options = [])
  * @method \App\Model\Entity\Chunk newEntity($data = null, array $options = [])
@@ -41,13 +44,22 @@ class ChunksTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('RefinedChunks', [
-            'foreignKey' => 'refined_chunk_id',
+        $this->belongsTo('Chunks', [
+            'foreignKey' => 'refined_chunk_id'
+        ]);
+        $this->belongsTo('ChunkCategories', [
+            'foreignKey' => 'chunk_category_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('ChunkRarities', [
             'foreignKey' => 'chunk_rarity_id',
             'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('ComponentTiers', [
+            'foreignKey' => 'component_tier_id'
+        ]);
+        $this->hasMany('Recipes', [
+            'foreignKey' => 'chunk_id'
         ]);
     }
 
@@ -62,6 +74,13 @@ class ChunksTable extends Table
         $validator
             ->integer('id')
             ->allowEmpty('id', 'create');
+
+        $validator
+            ->scalar('identifier')
+            ->maxLength('identifier', 255)
+            ->requirePresence('identifier', 'create')
+            ->notEmpty('identifier')
+            ->add('identifier', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
             ->scalar('name')
@@ -96,8 +115,11 @@ class ChunksTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['refined_chunk_id'], 'RefinedChunks'));
+        $rules->add($rules->isUnique(['identifier']));
+        $rules->add($rules->existsIn(['refined_chunk_id'], 'Chunks'));
+        $rules->add($rules->existsIn(['chunk_category_id'], 'ChunkCategories'));
         $rules->add($rules->existsIn(['chunk_rarity_id'], 'ChunkRarities'));
+        $rules->add($rules->existsIn(['component_tier_id'], 'ComponentTiers'));
 
         return $rules;
     }

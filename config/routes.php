@@ -101,6 +101,15 @@ Router::scope('/api', function (RouteBuilder $routes) {
     ->setPass(['id'])
     ->setHost($hostname)
     ->setExtensions(['json']);
+
+    $routes->get(
+        '/chunks/:id',
+        'Api/Chunks::view'
+    )
+    ->setPatterns(['id' => '\d+'])
+    ->setPass(['id'])
+    ->setHost($hostname)
+    ->setExtensions(['json']);
 });
 
 Router::scope('/', function (RouteBuilder $routes) {
