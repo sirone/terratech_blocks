@@ -1,24 +1,25 @@
 'use strict';
 $(function($) {
+    const regex_linebreak=/([！。？!?｡])/g;
     $('.information_modal').iziModal({
         group: 'information-list',
         loop: true,
         radius: 8,
         top: 80,
-        timeout: 500000,
+        timeout: 5000,
         timeoutProgressbar: true,
         pauseOnHover: true,
         headerColor: '#116d76',
     });
 
-    function ajax_get_request($parameters, $done, $fail) {
-        $.ajax($parameters)
-        .done( (response, status, jqXHR) => $done(response, status, jqXHR) )
-        .fail( (status, jqXHR, errorThrown) => $fail(status, jqXHR, errorThrown) )
+    function ajax_get_request(parameters, done_func, fail_func) {
+        $.ajax(parameters)
+        .done( (response, status, jqXHR) => done_func(response, status, jqXHR) )
+        .fail( (status, jqXHR, errorThrown) => fail_func(status, jqXHR, errorThrown) )
     }
 
     function blocks_request() {
-        let queries = {
+        const queries = {
             corporation_id : $('#select_corporations').val(),
             category_id : $('#select_categories').val(),
             grade : $('#select_grades').val(),
@@ -42,7 +43,7 @@ $(function($) {
 
     function block_request(id) {
         ajax_get_request({
-                url:'api/blocks/'+id+'.json?',
+                url:'api/blocks/'+id+'.json',
                 type:'GET',
             }, function (response, status, jqXHR) {
                 block_apply(response);
@@ -60,7 +61,7 @@ $(function($) {
         $('#out_category img').attr('src',data.category.image_url);
         $('#out_category').attr({'data-toggle':'tooltip','title': data.category.name});
         $('#out_block img').attr('src',data.image_url);
-        $('#out_block').attr({'data-toggle':'tooltip','title': data.description.replace(/([！。？!?｡])/g, '$1\r\n')});
+        $('#out_block').attr({'data-toggle':'tooltip','title': data.description.replace(regex_linebreak, '$1\r\n')});
         $('#out_grade').html(data.grade);
         recipe_request(data.id);
         chunk_request(data.id);
@@ -68,7 +69,7 @@ $(function($) {
 
     function recipe_request(block_id) {
         ajax_get_request({
-                url:'api/recipes/'+block_id+'.json?',
+                url:'api/recipes/'+block_id+'.json',
                 type:'GET',
             }, function (response, status, jqXHR) {
                 recipe_apply(response);
@@ -89,7 +90,7 @@ $(function($) {
         }
         for (let key in data) {
             $('#out_recipe_'+key+' img').attr('src',data[key].chunk.image_url);
-            $('#out_recipe_'+key).attr({'data-toggle':'tooltip','title': data[key].chunk.name+'\r\n'+data[key].chunk.description.replace(/([！。？!?｡])/g, '$1\r\n')});
+            $('#out_recipe_'+key).attr({'data-toggle':'tooltip','title': data[key].chunk.name+'\r\n'+data[key].chunk.description.replace(regex_linebreak, '$1\r\n')});
             $('#out_recipe_name_'+key).html(data[key].chunk.name);
             $('#out_recipe_rarity_'+key).html(data[key].chunk.chunk_rarity.name);
             $('#out_recipe_need_'+key).html(data[key].need);
@@ -133,7 +134,7 @@ $(function($) {
 
     function chunk_request(block_id) {
         ajax_get_request({
-                url:'api/chunks/'+block_id+'.json?',
+                url:'api/chunks/'+block_id+'.json',
                 type:'GET',
             }, function (response, status, jqXHR) {
                 chunk_apply(response);
@@ -155,7 +156,7 @@ $(function($) {
         }
         for (let key in data) {
             $('#out_chunk_'+key+' img').attr('src',data[key].image_url);
-            $('#out_chunk_'+key).attr({'data-toggle':'tooltip','title': data[key].name+'\r\n'+data[key].description.replace(/([！。？!?｡])/g, '$1\r\n')});
+            $('#out_chunk_'+key).attr({'data-toggle':'tooltip','title': data[key].name+'\r\n'+data[key].description.replace(regex_linebreak, '$1\r\n')});
             $('#out_chunk_name_'+key).html(data[key].name);
             $('#out_chunk_need_'+key).html(data[key].need);
             $('#out_chunk_original_need_'+key).html(data[key].need);
