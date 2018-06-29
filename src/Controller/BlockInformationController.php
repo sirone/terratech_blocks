@@ -35,6 +35,7 @@ class BlockInformationController extends AppController
             $information->find('all')
                         ->select(['id', 'title', 'description', 'InformationCategories.name', 'reserved_at'])
                         ->where(['OR' => [['reserved_at IS NULL'],['reserved_at <= NOW()']]])
+                        ->order(['reserved_at' => 'DESC'])
                         ->Contain(['InformationCategories'])
                         ->all()
         );

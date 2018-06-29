@@ -37,7 +37,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 </style>
 <?php foreach ($information_list as $information): ?>
 <div class="information_modal" data-izimodal-group="information-list" data-iziModal-title="<?= $information->title ?>" data-iziModal-subtitle="<?= $information->information_category->name ?> <?= $information->reserved_at ?>">
-    <?= $information->description; ?>
+    <pre><?= $information->description; ?></pre>
     <nav>
         <button data-izimodal-prev="" class="p-1">前のニュース</button><button data-izimodal-next="" class="p-1">次のニュース</button>
     </nav>

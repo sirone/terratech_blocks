@@ -39,9 +39,9 @@
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
-        <?php if ($this->request->session()->read('Auth.User.email')) : ?>
+        <?php if ($this->request->getSession()->read('Auth.User.email')) : ?>
         <div class="text-right">
-            ログイン中：<?= $this->request->session()->read('Auth.User.email') ?>
+            ログイン中：<?= $this->request->getSession()->read('Auth.User.email') ?>
             <a class="text-danger" href="maintainers/logout">ログアウト</a>
         </div>
         <?php endif; ?>
