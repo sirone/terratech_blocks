@@ -27,7 +27,7 @@ class ChunksController extends AppController
             ->find('all')
             ->select(['id', /*'block_id','chunk_id',*/'need',
                 /*'Blocks.id','Blocks.name','Blocks.image_url',*/
-                'Chunks.id','Chunks.name','Chunks.description','Chunks.image_url','Chunks.component_tier_id',
+                'Chunks.id','Chunks.name','Chunks.description','Chunks.image_url','Chunks.component_tier_id','Chunks.sell_price',
                 /*'ChunkRarities.id',*/'ChunkRarities.name',
                 /*'ChunkCategories.id',*/'ChunkCategories.name',
             ])

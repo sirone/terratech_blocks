@@ -38,7 +38,7 @@ class RecipesController extends AppController
             ->find('all')
             ->select(['id', /*'block_id','chunk_id',*/'need',
                 /*'Blocks.id','Blocks.name','Blocks.image_url',*/
-                'Chunks.id','Chunks.name','Chunks.description','Chunks.image_url',
+                'Chunks.id','Chunks.name','Chunks.description','Chunks.image_url','Chunks.sell_price',
                 'ChunkRarities.id','ChunkRarities.name'
             ])
             ->where(['block_id =' => $id])

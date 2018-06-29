@@ -44,7 +44,7 @@ class BlocksController extends AppController
     {
         $block = $this->Blocks->get($id, [
             'contain' => ['Categories', 'Rarities', 'Corporations'],
-            'fields' => ['id', /*'identifier',*/'category_id','rarity_id','corporation_id','grade','name','description','image_url',
+            'fields' => ['id', /*'identifier',*/'category_id','rarity_id','corporation_id','grade','name','description','image_url','purchase_price','sale_price',
                 'Categories.id',/*'Categories.identifier',*/'Categories.name','Categories.image_url',
                 'Rarities.id',/*'Rarities.identifier',*/'Rarities.name','Rarities.image_url',
                 'Corporations.id',/*'Corporations.identifier',*/'Corporations.name','Corporations.image_url',
