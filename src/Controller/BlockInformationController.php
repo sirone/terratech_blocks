@@ -22,6 +22,12 @@ use Cake\ORM\TableRegistry;
  */
 class BlockInformationController extends AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow();
+    }
+
     public function index()
     {
         $information = TableRegistry::get('information');

@@ -39,6 +39,12 @@
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
+        <?php if ($this->request->session()->read('Auth.User.email')) : ?>
+        <div class="text-right">
+            ログイン中：<?= $this->request->session()->read('Auth.User.email') ?>
+            <a class="text-danger" href="maintainers/logout">ログアウト</a>
+        </div>
+        <?php endif; ?>
     </nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">

@@ -25,12 +25,18 @@ use \Cake\Event\Event;
  */
 class AppController extends \App\Controller\AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow();
+    }
+
     public function beforeFilter(Event $event)
     {
         // api 系コントローラは ajax 以外からは呼び出せないようにする.
         parent::beforeFilter($event);
         if (!$this->request->is('ajax')) {
-        //    throw new \Cake\Http\Exception\NotFoundException();
+            throw new \Cake\Http\Exception\NotFoundException();
         }
     }
 }

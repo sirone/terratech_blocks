@@ -28,7 +28,6 @@ use Cake\Cache\Cache;
  */
 class AppController extends Controller
 {
-
     /**
      * Initialization hook method.
      *
@@ -45,10 +44,29 @@ class AppController extends Controller
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
-        /*
-         * Enable the following component for recommended CakePHP security settings.
-         * see https://book.cakephp.org/3.0/en/controllers/components/security.html
-         */
-        //$this->loadComponent('Security');
+        $this->loadComponent('Auth', [
+            'loginAction' => [
+                'controller' => 'Maintainers',
+                'action' => 'login'
+            ],
+            'loginRedirect' => [
+                'controller' => 'Maintainers',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'BlockInformation',
+                'action' => 'index'
+            ],
+            'authenticate' => [
+                'Form' => [
+                    'fields' => ['username' => 'username', 'password' => 'password'],
+                    'userModel' => 'Maintainers'
+                ],
+            ],
+            'storage' => 'Session',
+        ]);
+    }
+    public function beforeFilter(Event $event) {
+        parent::beforeFilter($event);
     }
 }

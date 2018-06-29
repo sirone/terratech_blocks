@@ -12,7 +12,6 @@ use App\Controller\AppController;
  */
 class InformationController extends AppController
 {
-
     /**
      * Index method
      *
