@@ -63,6 +63,8 @@ $(function($) {
         $('#out_block img').attr('src',data.image_url);
         $('#out_block').attr({'data-toggle':'tooltip','title': data.description.replace(regex_linebreak, '$1\r\n')});
         $('#out_grade').html(data.grade);
+        $('#purchase_price').text('฿฿'+data.purchase_price);
+        $('#sale_price').text('฿฿'+data.sale_price);
         recipe_request(data.id);
         chunk_request(data.id);
     }
@@ -90,7 +92,7 @@ $(function($) {
         }
         for (let key in data) {
             $('#out_recipe_'+key+' img').attr('src',data[key].chunk.image_url);
-            $('#out_recipe_'+key).attr({'data-toggle':'tooltip','title': data[key].chunk.name+'\r\n'+data[key].chunk.description.replace(regex_linebreak, '$1\r\n')});
+            $('#out_recipe_'+key).attr({'data-toggle':'tooltip','title': data[key].chunk.name+'\r\n'+data[key].chunk.description.replace(regex_linebreak, '$1\r\n')+'売却:฿฿'+data[key].chunk.sell_price});
             $('#out_recipe_name_'+key).html(data[key].chunk.name);
             $('#out_recipe_rarity_'+key).html(data[key].chunk.chunk_rarity.name);
             $('#out_recipe_need_'+key).html(data[key].need);
@@ -156,7 +158,7 @@ $(function($) {
         }
         for (let key in data) {
             $('#out_chunk_'+key+' img').attr('src',data[key].image_url);
-            $('#out_chunk_'+key).attr({'data-toggle':'tooltip','title': data[key].name+'\r\n'+data[key].description.replace(regex_linebreak, '$1\r\n')});
+            $('#out_chunk_'+key).attr({'data-toggle':'tooltip','title': data[key].name+'\r\n'+data[key].description.replace(regex_linebreak, '$1\r\n')+'売却:฿฿'+data[key].sell_price});
             $('#out_chunk_name_'+key).html(data[key].name);
             $('#out_chunk_need_'+key).html(data[key].need);
             $('#out_chunk_original_need_'+key).html(data[key].need);
