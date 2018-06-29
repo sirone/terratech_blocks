@@ -105,8 +105,8 @@ button:hover, button:focus, .button:hover, .button:focus {
                 <div class="col-6 bd-highlight">売値</div>
             </div>
             <div class="d-flex align-content-stretch">
-                <div class="col-6 bd-highlight" id="purchase_price">฿฿0</div><?php // 買値 ?>
-                <div class="col-6 bd-highlight" id="sale_price">฿฿0</div><?php // 売値 ?>
+                <div class="p-2 col-6 bd-highlight" id="purchase_price">฿฿0</div><?php // 買値 ?>
+                <div class="p-2 col-6 bd-highlight" id="sale_price">฿฿0</div><?php // 売値 ?>
             </div>
         </div>
         <?php for ($i=0; $i<5; $i++) : ?>
