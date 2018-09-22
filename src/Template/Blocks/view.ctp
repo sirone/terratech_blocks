@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Image Url') ?></th>
-            <td><?= h($block->image_url) ?></td>
+            <td><?= h($block->image_url) ?><img src="/<?= h($block->image_url) ?>"></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

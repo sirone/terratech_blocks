@@ -40,8 +40,8 @@ class BlocksTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Blocks') ? [] : ['className' => BlocksTable::class];
-        $this->Blocks = TableRegistry::get('Blocks', $config);
+        $config = TableRegistry::getTableLocator()->exists('Blocks') ? [] : ['className' => BlocksTable::class];
+        $this->Blocks = TableRegistry::getTableLocator()->get('Blocks', $config);
     }
 
     /**

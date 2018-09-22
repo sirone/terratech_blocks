@@ -46,7 +46,6 @@
                 <th scope="col"><?= __('Image Url') ?></th>
                 <th scope="col"><?= __('Sell Price') ?></th>
                 <th scope="col"><?= __('Refined Chunk Id') ?></th>
-                <th scope="col"><?= __('Chunk Rarity Id') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -56,10 +55,9 @@
                 <td><?= h($chunks->id) ?></td>
                 <td><?= h($chunks->name) ?></td>
                 <td><?= h($chunks->description) ?></td>
-                <td><?= h($chunks->image_url) ?></td>
+                <td><?= h($chunks->image_url) ?><img src="/<?= h($chunks->image_url) ?>"></td>
                 <td><?= h($chunks->sell_price) ?></td>
                 <td><?= h($chunks->refined_chunk_id) ?></td>
-                <td><?= h($chunks->chunk_rarity_id) ?></td>
                 <td><?= h($chunks->created) ?></td>
                 <td><?= h($chunks->modified) ?></td>
                 <td class="actions">

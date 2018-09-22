@@ -67,7 +67,7 @@
                 <td><?= h($blocks->grade) ?></td>
                 <td><?= h($blocks->name) ?></td>
                 <td><?= h($blocks->description) ?></td>
-                <td><?= h($blocks->image_url) ?></td>
+                <td><?= h($blocks->image_url) ?><img src="/<?= h($rarity->image_url) ?>"></td>
                 <td><?= h($blocks->created) ?></td>
                 <td><?= h($blocks->modified) ?></td>
                 <td class="actions">

@@ -19,6 +19,7 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Block newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Block[] newEntities(array $data, array $options = [])
  * @method \App\Model\Entity\Block|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Block|bool saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
  * @method \App\Model\Entity\Block patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Block[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Block findOrCreate($search, callable $callback = null, $options = [])
@@ -103,6 +104,14 @@ class BlocksTable extends Table
             ->scalar('image_url')
             ->maxLength('image_url', 255)
             ->allowEmpty('image_url');
+
+        $validator
+            ->integer('purchase_price')
+            ->allowEmpty('purchase_price');
+
+        $validator
+            ->integer('sale_price')
+            ->allowEmpty('sale_price');
 
         return $validator;
     }

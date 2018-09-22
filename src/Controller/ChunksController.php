@@ -21,7 +21,7 @@ class ChunksController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['RefinedChunks', 'ChunkRarities']
+            'contain' => ['RefinedChunks', 'ChunkCategories', 'ChunkRarities', 'ComponentTiers']
         ];
         $chunks = $this->paginate($this->Chunks);
 
@@ -38,7 +38,7 @@ class ChunksController extends AppController
     public function view($id = null)
     {
         $chunk = $this->Chunks->get($id, [
-            'contain' => ['RefinedChunks', 'ChunkRarities']
+            'contain' => ['RefinedChunks', 'ChunkCategories', 'ChunkRarities', 'ComponentTiers', 'Recipes']
         ]);
 
         $this->set('chunk', $chunk);
@@ -62,8 +62,10 @@ class ChunksController extends AppController
             $this->Flash->error(__('The chunk could not be saved. Please, try again.'));
         }
         $refinedChunks = $this->Chunks->RefinedChunks->find('list', ['limit' => 200]);
+        $chunkCategories = $this->Chunks->ChunkCategories->find('list', ['limit' => 200]);
         $chunkRarities = $this->Chunks->ChunkRarities->find('list', ['limit' => 200]);
-        $this->set(compact('chunk', 'refinedChunks', 'chunkRarities'));
+        $componentTiers = $this->Chunks->ComponentTiers->find('list', ['limit' => 200]);
+        $this->set(compact('chunk', 'refinedChunks', 'chunkCategories', 'chunkRarities', 'componentTiers'));
     }
 
     /**
@@ -76,7 +78,7 @@ class ChunksController extends AppController
     public function edit($id = null)
     {
         $chunk = $this->Chunks->get($id, [
-            'contain' => []
+            'contain' => ['RefinedChunks', 'ChunkCategories', 'ChunkRarities', 'ComponentTiers']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $chunk = $this->Chunks->patchEntity($chunk, $this->request->getData());
@@ -88,8 +90,10 @@ class ChunksController extends AppController
             $this->Flash->error(__('The chunk could not be saved. Please, try again.'));
         }
         $refinedChunks = $this->Chunks->RefinedChunks->find('list', ['limit' => 200]);
+        $chunkCategories = $this->Chunks->ChunkCategories->find('list', ['limit' => 200]);
         $chunkRarities = $this->Chunks->ChunkRarities->find('list', ['limit' => 200]);
-        $this->set(compact('chunk', 'refinedChunks', 'chunkRarities'));
+        $componentTiers = $this->Chunks->ComponentTiers->find('list', ['limit' => 200]);
+        $this->set(compact('chunk', 'refinedChunks', 'chunkCategories', 'chunkRarities', 'componentTiers'));
     }
 
     /**

@@ -48,7 +48,7 @@
                 <td><?= $block->has('corporation') ? $this->Html->link($block->corporation->name, ['controller' => 'Corporations', 'action' => 'view', $block->corporation->id]) : '' ?></td>
                 <td><?= $this->Number->format($block->grade) ?></td>
                 <td><?= h($block->name) ?></td>
-                <td><?= h($block->image_url) ?></td>
+                <td><?= h($block->image_url) ?><img src="<?= h($block->image_url) ?>"></td>
                 <td><?= h($block->created) ?></td>
                 <td><?= h($block->modified) ?></td>
                 <td class="actions">

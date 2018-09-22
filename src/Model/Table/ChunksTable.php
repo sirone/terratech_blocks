@@ -9,16 +9,18 @@ use Cake\Validation\Validator;
 /**
  * Chunks Model
  *
- * @property \App\Model\Table\ChunksTable|\Cake\ORM\Association\BelongsTo $Chunks
- * @property |\Cake\ORM\Association\BelongsTo $ChunkCategories
+ * @property \App\Model\Table\ChunksTable|\Cake\ORM\Association\BelongsTo $RefinedChunks
+ * @property \App\Model\Table\ChunkCategoriesTable|\Cake\ORM\Association\BelongsTo $ChunkCategories
  * @property \App\Model\Table\ChunkRaritiesTable|\Cake\ORM\Association\BelongsTo $ChunkRarities
- * @property |\Cake\ORM\Association\BelongsTo $ComponentTiers
- * @property |\Cake\ORM\Association\HasMany $Recipes
+ * @property \App\Model\Table\ComponentTiersTable|\Cake\ORM\Association\BelongsTo $ComponentTiers
+ * @property |\Cake\ORM\Association\HasMany $ComponentRecipes
+ * @property \App\Model\Table\RecipesTable|\Cake\ORM\Association\HasMany $Recipes
  *
  * @method \App\Model\Entity\Chunk get($primaryKey, $options = [])
  * @method \App\Model\Entity\Chunk newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Chunk[] newEntities(array $data, array $options = [])
  * @method \App\Model\Entity\Chunk|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Chunk|bool saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
  * @method \App\Model\Entity\Chunk patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Chunk[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Chunk findOrCreate($search, callable $callback = null, $options = [])
@@ -44,8 +46,10 @@ class ChunksTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Chunks', [
-            'foreignKey' => 'refined_chunk_id'
+        $this->belongsTo('RefinedChunks', [
+            'foreignKey' => 'refined_chunk_id',
+            'className' => 'Chunks',
+            'joinType' => 'LEFT'
         ]);
         $this->belongsTo('ChunkCategories', [
             'foreignKey' => 'chunk_category_id',
@@ -57,6 +61,9 @@ class ChunksTable extends Table
         ]);
         $this->belongsTo('ComponentTiers', [
             'foreignKey' => 'component_tier_id'
+        ]);
+        $this->hasMany('ComponentRecipes', [
+            'foreignKey' => 'chunk_id'
         ]);
         $this->hasMany('Recipes', [
             'foreignKey' => 'chunk_id'
@@ -116,7 +123,7 @@ class ChunksTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['identifier']));
-        $rules->add($rules->existsIn(['refined_chunk_id'], 'Chunks'));
+        $rules->add($rules->existsIn(['refined_chunk_id'], 'RefinedChunks'));
         $rules->add($rules->existsIn(['chunk_category_id'], 'ChunkCategories'));
         $rules->add($rules->existsIn(['chunk_rarity_id'], 'ChunkRarities'));
         $rules->add($rules->existsIn(['component_tier_id'], 'ComponentTiers'));

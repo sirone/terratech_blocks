@@ -29,7 +29,7 @@
             <tr>
                 <td><?= $this->Number->format($corporation->id) ?></td>
                 <td><?= h($corporation->name) ?></td>
-                <td><?= h($corporation->image_url) ?></td>
+                <td><?= h($corporation->image_url) ?><img src="<?= h($corporation->image_url) ?>"></td>
                 <td><?= h($corporation->is_planned) ?></td>
                 <td><?= h($corporation->created) ?></td>
                 <td><?= h($corporation->modified) ?></td>

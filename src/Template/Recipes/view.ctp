@@ -22,11 +22,11 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Block') ?></th>
-            <td><?= $recipe->has('block') ? $this->Html->link($recipe->block->name, ['controller' => 'Blocks', 'action' => 'view', $recipe->block->id]) : '' ?></td>
+            <td><?= $recipe->has('block') ? $this->Html->link($recipe->block->name, ['controller' => 'Blocks', 'action' => 'view', $recipe->block->id]) : '' ?><?php if ($recipe->has('block')) : ?><img src="/<?= $recipe->block->image_url?>"><?php else : ?><?php endif; ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Chunk') ?></th>
-            <td><?= $recipe->has('chunk') ? $this->Html->link($recipe->chunk->name, ['controller' => 'Chunks', 'action' => 'view', $recipe->chunk->id]) : '' ?></td>
+            <td><?= $recipe->has('chunk') ? $this->Html->link($recipe->chunk->name, ['controller' => 'Chunks', 'action' => 'view', $recipe->chunk->id]) : '' ?><?php if ($recipe->has('chunk')) : ?><img src="/<?= $recipe->chunk->image_url?>"><?php else : ?><?php endif; ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

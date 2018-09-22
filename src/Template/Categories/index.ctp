@@ -30,7 +30,7 @@
             <tr>
                 <td><?= $this->Number->format($category->id) ?></td>
                 <td><?= h($category->name) ?></td>
-                <td><?= h($category->image_url) ?></td>
+                <td><?= h($category->image_url) ?><img src="/<?= h($category->image_url) ?>"></td>
                 <td><?= h($category->created) ?></td>
                 <td><?= h($category->modified) ?></td>
                 <td class="actions">

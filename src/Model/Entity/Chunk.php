@@ -20,7 +20,10 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Chunk $refined_chunk
+ * @property \App\Model\Entity\ChunkCategory $chunk_category
  * @property \App\Model\Entity\ChunkRarity $chunk_rarity
+ * @property \App\Model\Entity\ComponentTier $component_tier
+ * @property \App\Model\Entity\Recipe[] $recipes
  */
 class Chunk extends Entity
 {
@@ -47,6 +50,9 @@ class Chunk extends Entity
         'created' => true,
         'modified' => true,
         'refined_chunk' => true,
-        'chunk_rarity' => true
+        'chunk_category' => true,
+        'chunk_rarity' => true,
+        'component_tier' => true,
+        'recipes' => true
     ];
 }

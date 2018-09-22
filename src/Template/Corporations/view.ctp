@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Image Url') ?></th>
-            <td><?= h($corporation->image_url) ?></td>
+            <td><?= h($corporation->image_url) ?><img src="/<?= h($corporation->image_url) ?>"></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

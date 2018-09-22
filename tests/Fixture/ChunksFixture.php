@@ -59,8 +59,8 @@ class ChunksFixture extends TestFixture
                 'chunk_category_id' => 1,
                 'chunk_rarity_id' => 1,
                 'component_tier_id' => 1,
-                'created' => '2018-06-19 19:10:28',
-                'modified' => 1529403028
+                'created' => '2018-07-04 13:51:05',
+                'modified' => 1530679865
             ],
         ];
         parent::init();

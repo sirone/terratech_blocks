@@ -15,6 +15,8 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property string $description
  * @property string $image_url
+ * @property int $purchase_price
+ * @property int $sale_price
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -45,6 +47,8 @@ class Block extends Entity
         'name' => true,
         'description' => true,
         'image_url' => true,
+        'purchase_price' => true,
+        'sale_price' => true,
         'created' => true,
         'modified' => true,
         'category' => true,

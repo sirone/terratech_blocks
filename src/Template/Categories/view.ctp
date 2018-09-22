@@ -23,7 +23,7 @@
             <td><?= h($category->name) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Image Url') ?></th>
+            <th scope="row"><?= __('Image Url') ?><img src="/<?= h($category->image_url) ?>"></th>
             <td><?= h($category->image_url) ?></td>
         </tr>
         <tr>
@@ -67,7 +67,7 @@
                 <td><?= h($blocks->grade) ?></td>
                 <td><?= h($blocks->name) ?></td>
                 <td><?= h($blocks->description) ?></td>
-                <td><?= h($blocks->image_url) ?></td>
+                <td><?= h($blocks->image_url) ?><img src="/<?= h($blocks->image_url) ?>"></td>
                 <td><?= h($blocks->created) ?></td>
                 <td><?= h($blocks->modified) ?></td>
                 <td class="actions">

@@ -30,7 +30,7 @@
             <tr>
                 <td><?= $this->Number->format($rarity->id) ?></td>
                 <td><?= h($rarity->name) ?></td>
-                <td><?= h($rarity->image_url) ?></td>
+                <td><?= h($rarity->image_url) ?><img src="/<?= h($rarity->image_url) ?>"></td>
                 <td><?= h($rarity->created) ?></td>
                 <td><?= h($rarity->modified) ?></td>
                 <td class="actions">

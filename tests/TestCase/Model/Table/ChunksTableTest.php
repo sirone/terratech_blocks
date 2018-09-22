@@ -25,8 +25,10 @@ class ChunksTableTest extends TestCase
      */
     public $fixtures = [
         'app.chunks',
-        'app.refined_chunks',
-        'app.chunk_rarities'
+        'app.chunk_categories',
+        'app.chunk_rarities',
+        'app.component_tiers',
+        'app.recipes'
     ];
 
     /**
@@ -37,8 +39,8 @@ class ChunksTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Chunks') ? [] : ['className' => ChunksTable::class];
-        $this->Chunks = TableRegistry::get('Chunks', $config);
+        $config = TableRegistry::getTableLocator()->exists('Chunks') ? [] : ['className' => ChunksTable::class];
+        $this->Chunks = TableRegistry::getTableLocator()->get('Chunks', $config);
     }
 
     /**

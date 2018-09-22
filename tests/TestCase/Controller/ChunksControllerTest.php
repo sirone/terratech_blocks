@@ -17,8 +17,10 @@ class ChunksControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.chunks',
-        'app.refined_chunks',
-        'app.chunk_rarities'
+        'app.chunk_categories',
+        'app.chunk_rarities',
+        'app.component_tiers',
+        'app.recipes'
     ];
 
     /**
